@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 import NotFound from './components/NotFound';
 import Sidebar from './components/Sidebar';
 import SidebarRight from './components/SidebarRight';
-
+import { send } from 'emailjs-com'
 
 function App() {
   return (
