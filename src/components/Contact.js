@@ -22,7 +22,7 @@ const sendEmail = (e) => {
         );
     e.target.reset();
 };
-
+  
 const Contact = () => {
     return (
         <>

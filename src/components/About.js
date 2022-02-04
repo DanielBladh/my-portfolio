@@ -1,8 +1,4 @@
-import { DiJavascript1 } from 'react-icons/di';
-import { DiReact } from 'react-icons/di';
-import { DiNodejsSmall } from 'react-icons/di';
-import { DiHtml5 } from 'react-icons/di';
-import { DiCss3Full } from 'react-icons/di';
+import { DiJavascript1, DiReact, DiNodejsSmall, DiHtml5, DiCss3Full } from 'react-icons/di';
 
 const About = () => {
     return ( 

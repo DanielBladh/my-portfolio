@@ -25,6 +25,7 @@ body {
 .navbar {
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 80%;
   margin: 0 auto;
@@ -87,6 +88,21 @@ body {
   color: #3DA35D;
 }
 
+/* Nav-menu */
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
 /* NAVBAR END */
 
 .content {
@@ -135,7 +151,6 @@ body {
 .profile-picture-background {
   height: 80%;
   width: 80%;
-  background-image: url("../../my-portfolio/src/assets/Daniel2.jpg");
   background-size: cover;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -224,6 +239,23 @@ body {
   background-color: #a8b2d1;
 }
 
+.repos-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 20px;
+  justify-items: center;
+}
+.repos-card {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  width: 150px;
+}
+.repos-card a{
+  text-decoration: none;
+  color: gray;
+}
+
 /* ABOUT ME PAGE */
 
 .about-main-container {
@@ -244,16 +276,18 @@ body {
 
 .about-main-text {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-main-picture {
   display: flex;
   align-items: center;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   margin: 0 0px 0 10%;
-  background-image: url("../../my-portfolio/src/assets/Daniel1.jpg");
+  background-image: url("../../my-portfolio/src/assets/Daniel2.jpg");
   background-size: cover;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -446,3 +480,26 @@ textarea:valid~label {
 
 /* RESPONSIVITET */
 
+@media screen and (max-width: 767px) {
+  
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .logo {
+    
+  }
+}
