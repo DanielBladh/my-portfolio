@@ -2,6 +2,8 @@ import { FaUserAlt, FaPhoneAlt, FaEnvelope, FaComments, FaPaperPlane } from "rea
 import { useState } from 'react';
 import emailjs from "@emailjs/browser";
 
+
+// Funktion som gör det möjligt att skicka och ta emor mail via mitt kontaktformulär //
 const sendEmail = (e) => {
     e.preventDefault();
 

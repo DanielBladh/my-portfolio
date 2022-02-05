@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+
+// Felhantering ifall användaren skulle mata in ogiltig address //
 const NotFound = () => {
     return ( 
         <div className="not-found">

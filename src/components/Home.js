@@ -1,6 +1,8 @@
 import { FaGithub } from 'react-icons/fa'
 import { useEffect, useState } from 'react';
 
+
+// Funktion som fetcher mina repos från Github, med hjälp av useState och useEffect //
 const Home = () => {
     const [name, setName] = useState('');
     const [username, setUsername] = useState('');
